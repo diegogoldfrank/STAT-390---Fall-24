@@ -1,1 +1,19 @@
 October 11
+
+Goals:
+
+"Presentation 2 objective is to work on the shortcomings of presentation 1, which, in decreasing order of priority, are:
+
+1) Improve epithelium detection, particularly on images not used to train your model. 
+   If your model doesn't require training, it must be general, i.e., work on all images.
+2) Loss in image quality may make it much harder to see / detect melanocytes, which need to 
+   be analyzed later in the project. If you are losing image quality, then, if possible, try to map 
+   the coordinates of the epithelium back to the raw image, so that only the part of the 
+   image having the epithelium can be analyzed. Or, update your method to avoid losing image quality
+   - maybe try using your python code within QuPath.
+3) Export the extracted epithelium, such that the exported image can be used to take samples from. 
+   Or, even better would be if you directly export samples of epithelium, instead of exporting the 
+   entire epithelium.
+4) Minimize human intervention required to implement your method on new images. The method has to 
+   be used by doctors, who will prefer just clicking a button to get samples of epithelium. 
+
