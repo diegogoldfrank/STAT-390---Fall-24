@@ -3,11 +3,26 @@ USEAGE NOTE: Kevin's algorithm is currently prefferred
 
 Luna worked on generalizing Eli's code from last week in many different ways. 
 
+Please access the file “Luna_Week4.ipynb” in the Luna folder for the file with all of my attempts to extract the epithelium. This file includes Eli’s very initial sample selection and then all  attempts to generalize his code with Otsu, different image files, and different sample selections. Please refer to the headings to understand the different blocks of code. 
+
+## Additional files
+“Week4_Luna+Eli.ipynb” in the GitHub big folder which includes my best result - using Eli’s Code with grayscale and selecting only the biggest 3 contours - along with Eli’s most recent code for sample selection. 
+
 ## Process
 Tried to generalize the kernel size to make the code more dynamic, but was unsuccessful. She also tried Otsu's threshold with Eli's grayscale images and selecting the biggest 2/3/5 contours or cutting off the contour list where the area dip to be less than 10% of the previous contour. Afterward, she repeated all of these for LAB images. 
 
 ## Takeaways
 Grayscale definitely work better than LAB and Otsu's is promising. The idea of sorting the contours by area and cutting off by 10% is not very applicable as the contours decreases in size more gradually then we think so it ends up overselecting for a lot of the images. The idea of selecting the biggest 2 or 3 contours seems to work the best and there doesn't seem to be a big difference in the efficiency between these two methods. 
+
+## Reproducing Luna's results
+You should already have a folder with all of the images that Cara exported in your working director. Then, running the block of code named “Eli's Code with Otsu's on Grayscale + Contour Selection stopping at 3 pieces” to create a function that would carry out the epithelium extraction and sample selection. The last chunk of code within this block basically reiterate through the list of all of Cara’s file names and apply the function to all of Cara’s images. 
+
+## Method limitations
+The biggest limitation of this code is the fact that they are hard coding to get the biggest three contours. This number comes from the fact that it works the best for most of the images, but it is obviously not perfect for all of them. Some images seem to be over selecting and some images seem to miss out on chunks of the epithelium. In addition, Otsu’s threshold seems to be picking up the darkest colors, some of which are the melanocytes that are invaginated into the stroma rather than just keeping the epithelium. There was a lot of over selection of the epithelium because of this. However, this method works better than the naive method of hard-coding a grayscale threshold and then only selecting the biggest contour.
+
+## Hard coding
+The threshold has been generalized so that rather than converting the image to grayscale and use a manual threshold that we set, the code now uses Otsu’s global threshold. In addition, Luna didn’t blur the images like how Eli did because the result provides sharper masks that didn’t over select for the epithelium. The number of selected contours is still hard coded, whether it is 2, 3, or 5 of pieces of the largest contours. 
+
 
 Link to all the images generated: 
 https://drive.google.com/drive/folders/1rJLWX3laQ-3ygDvUkrCNVjvJ2ftRkcYn?usp=drive_link 
