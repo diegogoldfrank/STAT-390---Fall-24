@@ -1,0 +1,12 @@
+## README for Luna's epithelium detection algorithm (Week 4)
+
+Luna worked on generalizing Eli's code from last week in many different ways. 
+
+## Process
+Tried to generalize the kernel size to make the code more dynamic, but was unsuccessful. She also tried Otsu's threshold with Eli's grayscale images and selecting the biggest 2/3/5 contours or cutting off the contour list where the area dip to be less than 10% of the previous contour. Afterward, she repeated all of these for LAB images. 
+
+## Takeaways
+Grayscale definitely work better than LAB and Otsu's is promising. The idea of sorting the contours by area and cutting off by 10% is not very applicable as the contours decreases in size more gradually then we think so it ends up overselecting for a lot of the images. The idea of selecting the biggest 2 or 3 contours seems to work the best and there doesn't seem to be a big difference in the efficiency between these two methods. 
+
+Link to all the images generated: 
+https://drive.google.com/drive/folders/1rJLWX3laQ-3ygDvUkrCNVjvJ2ftRkcYn?usp=drive_link 
