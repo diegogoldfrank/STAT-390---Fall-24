@@ -1,4 +1,4 @@
-Steps for Team 4's code:
+Steps for Team 4's Automation:
 1. Download all images into one folder
 2. Try to standardize file names so they have the same format, to make them easier to operate on (I had to do some manually - don't trust the script I wrote for that blindly - it helps, but is not 100% perfect yet)
 3. Delete any patients that don't have images of all 3 strains
