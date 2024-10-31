@@ -1,0 +1,22 @@
+Issues noticed:
+
+patient h1845484 can't extract slices using either Noah or Cara's code for h&e
+patient h1857578A is missing 1 slice from h&e which was probably dropped because of low file size(?)
+patient h1942528 can't extract slices from all 3 strains
+patient h2114161 has bars across image for sox10
+patient h2114162 is missing all slices
+patient h2114163 is missing melan slice
+patient h2114164 is missing 2 slices for h&e, all for melan, one slice for sox10
+patient h2114165 is missing 2 slices for h&e and all for melan and sox10
+patient h2114166 is missing slices for melan and sox10, one slice has gray bars through it for h&e
+patient h2114167 did not extract slices
+patient h2114168 I'm unsure if the extracted slices are correct or just parts of a whole
+patient h2114169 missing melan slice
+patient h2114170 missing melan and sox10 slices
+patient h2114171 missing sox10 slices
+patient h2114172 missing sox10 slices
+patient h2114179 missing sox10 slices
+patient h2114180 missing sox10 slices
+patient h2114181 has some split slices h&e and one slice has a black line through it
+patient h2114188 missing a slice from h&e, missing 2 from melan, all from sox10
+
