@@ -1,4 +1,4 @@
-### Explanation
+Explanation
 This code provides a method for segmenting and analyzing regions within a tissue sample image, 
 focusing on detecting specific tissue structures and isolating regions based on color and contour characteristics. 
 Initially, the code uses edge detection to identify regions and further refines this with Canny edge detection, 
