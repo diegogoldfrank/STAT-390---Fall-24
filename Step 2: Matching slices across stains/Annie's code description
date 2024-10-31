@@ -1,0 +1,13 @@
+Annie’s code is designed to analyze tissue scan images for each patient and identify the best match
+across three different staining types—H&E, melan (melanin), and Sox. The main objective is to find
+the optimal combination of one image from each stain type that has the highest overall similarity in shape.
+This similarity is computed by extracting the primary contours from each image and calculating shape similarity
+scores for each combination. The code then averages the similarity scores between the three image pairings to
+get an overall similarity score for each combination, which allows it to determine the best-matching trio of images for each patient.
+
+To use the code, place the patient folders containing tissue scan images into a specified directory 
+(e.g., images/). Each folder should contain images labeled by staining type—H&E, melan, or Sox. 
+You’ll also need to set the path to this directory in the code. The code reads the images from each patient folder,
+calculates the contour similarity scores, and then outputs the filenames and similarity scores of the best three-way
+image match for each patient. The best-matching images are displayed in a side-by-side format, and the similarity
+score for each patient folder is printed in the output for easy comparison.
