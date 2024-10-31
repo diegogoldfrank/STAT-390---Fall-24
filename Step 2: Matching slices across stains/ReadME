@@ -1,9 +1,10 @@
-Download all images into one folder
-Try to standardize file names so they have the same format, to make them easier to operate on (I had to do some manually - don't trust the script I wrote for that blindly - it helps, but is not 100% perfect yet)
-Delete any patients that don't have images of all 3 strains
-For the patients with multiple copies of the same strain (e.g. patient X has 3 copies of the h&e strain image) then keep the one with the highest resolution
-Then use a combination of Noah's cropping algorithm & Cara's automation to extract slices from each image
-Then go through the slices (there were a lot of errors - missing slices, too many slices, too few slices etc.) and remove the lowest quality ones (smallest file size) and then manually go through the rest and check for errors (again, there were so many errors)
-Then split up by patient into folders (filename: patientID_strainType_"slice"_number)
-Then go through the images and create subfolders with matching 3 images
-And delete the rest of the images as they aren't needed
+Steps for Team 4's code:
+1. Download all images into one folder
+2. Try to standardize file names so they have the same format, to make them easier to operate on (I had to do some manually - don't trust the script I wrote for that blindly - it helps, but is not 100% perfect yet)
+3. Delete any patients that don't have images of all 3 strains
+4. For the patients with multiple copies of the same strain (e.g. patient X has 3 copies of the h&e strain image) then keep the one with the highest resolution
+5. Then use a combination of Noah's cropping algorithm & Cara's automation to extract slices from each image
+6. Then go through the slices (there were a lot of errors - missing slices, too many slices, too few slices etc.) and remove the lowest quality ones (smallest file size) and then manually go through the rest and check for errors (again, there were so many errors)
+7. Then split up by patient into folders (filename: patientID_strainType_"slice"_number)
+8. Then go through the images and create subfolders with matching 3 images
+9. And delete the rest of the images as they aren't needed
