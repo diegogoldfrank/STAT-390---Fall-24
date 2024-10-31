@@ -1,0 +1,33 @@
+### Explanation
+This code provides a method for segmenting and analyzing regions within a tissue sample image, 
+focusing on detecting specific tissue structures and isolating regions based on color and contour characteristics. 
+Initially, the code uses edge detection to identify regions and further refines this with Canny edge detection, 
+isolating areas that may correspond to different tissue structures like the outer black boundary, magenta epithelium,
+and inner stroma. By repeatedly sampling from different image regions, the code attempts to ensure an appropriate 
+representation of these key structures within each sample. The approach also involves color-based pixel classification
+to differentiate and quantify specific color regions, such as magenta for epithelium and a loose blue/indigo for stroma. 
+This process culminates in visualizing segmented patches within the tissue, marked by red rectangles to indicate regions
+containing these tissue characteristics. Additionally, based on feedback, the method has been adapted to apply fixed-sized boxes,
+ensuring uniform sampling dimensions that align with stakeholder specifications.
+
+Instruction Manual:
+1. Setup: Ensure that OpenCV, NumPy, and Matplotlib are installed. Place the tissue image (e.g., `FinalExtraction.jpg`)
+in the specified path or update the code to point to the correct image location.
+2. Load Image**: The script reads the input image and converts it to an RGB format suitable for processing.
+3. Run Sampling Method**: The main function, `fixed_box_epithelium_sample`, performs edge detection, classifies 
+pixels by color, and defines fixed-sized sampling boxes. Customize `num_samples` for the number of samples and `box_size`
+for patch dimensions if needed.
+4. Generate and Display Samples**: The code identifies regions containing black (outer boundary), magenta (epithelium),
+and blue/indigo (stroma) pixels, checking that each sampled region meets a minimum count threshold for these colors.
+The results are displayed with red rectangles marking the extracted patches, and each individual sample is displayed separately.
+5. Visualization: The script plots the main tissue image with red rectangles indicating sample locations, followed by
+individual samples in a grid format.
+
+Limitations
+This method, while useful for identifying tissue regions based on color classification and edge detection,
+has some limitations. Since it relies heavily on color thresholds, variations in lighting, staining, and image
+quality can lead to inconsistent results or require threshold adjustments. Additionally, the classification of 
+tissue structures using pixel colors may not capture subtler structural details. The fixed patch size is effective 
+for consistency but may not fully accommodate regions of interest that vary in size or shape, potentially missing 
+relevant details. Lastly, the method assumes specific color ranges for each tissue region, limiting its adaptability
+to images with different color characteristics or staining protocols.
