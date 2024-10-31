@@ -1,0 +1,28 @@
+This method is designed to analyze tissue images, focusing on identifying and quantifying purple-stained regions,
+commonly used to highlight specific tissue markers or characteristics. The process begins with generating an epithelium
+mask to isolate tissue regions using contour detection. The input image is preprocessed through grayscale conversion,
+blurring, and thresholding to create a binary mask. Morphological operations help refine this mask by smoothing edges
+and removing noise. Contours outlining the epithelium are then extracted and drawn on the original image, creating a
+clear visual distinction of the tissue region. The next step, superpixel segmentation, uses color and texture similarity
+to divide the image into smaller segments. Each segment is analyzed for purple concentration based on defined HSV color thresholds,
+allowing a more consistent analysis across lighting variations. Regions with high staining concentration retain their original
+color, moderate concentrations are marked in white, and low concentrations in black, emphasizing tissue areas by staining intensity.
+
+Instructions for Use:
+
+To use this code, start by organizing your images and ensuring that they are named 
+and stored in a directory that matches the image path specified in the code. The 
+`generate_epithelium_mask` function should be run first to generate the contour mask and
+identify tissue regions. Next, run the `create_and_cut_superpixels` function with the input image,
+contour mask, and the contours generated. Adjust parameters like `num_segments` for superpixel count
+and `lower_purple`/`upper_purple` to refine HSV color thresholds as needed. The code will output segmented
+images with regions classified by purple concentration, with the ability to visualize and quantify these staining patterns.
+
+Limitations:
+
+While effective for highlighting stained regions, this method has several limitations. 
+The code's effectiveness relies on optimal threshold and morphological parameters, which may 
+need fine-tuning across different images. Variations in lighting or staining intensity can also impact results, 
+potentially requiring adjustments to color thresholds. Additionally, the current code is unfinished for outside-region
+processing and is limited in handling overlapping tissue regions where superpixels may mix inside and outside regions. 
+Expanding these capabilities would further enhance the tool’s robustness across diverse tissue samples.
