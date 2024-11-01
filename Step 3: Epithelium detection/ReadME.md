@@ -6,6 +6,8 @@ Following this, superpixel segmentation uses color and texture similarity to div
 
 ---
 
+This requires Kevin's algorithm, which is in this folder (Epithelium Extraction.ipynb). 
+
 ## Table of Contents
 - [Instruction Manual](#instruction-manual)
 - [Limitations](#limitations)
