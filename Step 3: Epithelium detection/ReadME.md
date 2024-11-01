@@ -13,6 +13,7 @@ Following this, superpixel segmentation uses color and texture similarity to div
 ---
 
 ## Instruction Manual 
+Ensure image input is in .tif format and all functions match the image input
 
 Ensure you have the following dependencies installed:
 
