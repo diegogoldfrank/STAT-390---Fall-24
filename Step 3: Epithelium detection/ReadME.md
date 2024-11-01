@@ -25,7 +25,7 @@ Ensure you have the following dependencies installed:
 Install the necessary packages if you haven’t already:
 ```bash
 pip install opencv-python-headless numpy scikit-image matplotlib
-```bash
+```
 
 Adjust parameters like `num_segments` for superpixel count and 
 `lower_purple`/`upper_purple` to refine HSV color thresholds as needed. 
