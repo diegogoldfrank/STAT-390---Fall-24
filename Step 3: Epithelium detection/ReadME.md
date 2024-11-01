@@ -1,52 +1,42 @@
+```markdown
 # Epithelium Extraction
 
-This method is designed to analyze tissue images, specifically focusing on identifying and quantifying purple-stained regions. 
-The pipeline first generates an epithelium mask to isolate tissue regions using contour detection. 
-After preprocessing the input image with grayscale conversion, blurring, and thresholding, a binary mask is created.
-Morphological operations then refine this mask by smoothing edges and removing noise. 
-Contours outlining the epithelium are extracted and drawn on the original image, creating a clear visual distinction of the tissue region.
-Next, superpixel segmentation uses color and texture similarity to divide the image into smaller segments. 
-Each segment is analyzed for purple concentration based on predefined HSV color thresholds, allowing a more consistent analysis across lighting variations. Regions with high staining concentration retain their original color, moderate concentrations are marked in white, and low concentrations in black, emphasizing tissue areas by staining intensity.
+This method analyzes tissue images by identifying and quantifying purple-stained regions. The process begins by generating an epithelium mask to isolate tissue regions using contour detection. The input image is preprocessed through grayscale conversion, blurring, and thresholding to create a binary mask. Morphological operations help refine this mask by smoothing edges and removing noise. Contours outlining the epithelium are then extracted and drawn on the original image, creating a clear visual distinction of the tissue region.
+
+Next, superpixel segmentation uses color and texture similarity to divide the image into smaller segments. Each segment is analyzed for purple concentration based on defined HSV color thresholds, allowing for consistent analysis across lighting variations. Regions with high staining concentration retain their original color, moderate concentrations are marked in white, and low concentrations in black, emphasizing tissue areas by staining intensity.
 
 ---
 
 ## Table of Contents
-- [Setup](#setup)
 - [Instruction Manual for Use](#instruction-manual-for-use)
-- [Pipeline Workflow](#pipeline-workflow)
-  - [Image Preprocessing](#image-preprocessing)
-  - [Segmentation Process](#segmentation-process)
-- [Known Limitations](#known-limitations)
-- [Troubleshooting](#troubleshooting)
+- [Limitations](#limitations)
 
 ---
 
-## Setup
+## Instruction Manual for Use
 
-Ensure you have the following dependencies installed:
+1. **Prepare Image Data**: Organize your `.tif` images and ensure they are stored in a directory path that matches the image path specified in the code.
+2. **Install Dependencies**:
+   - Ensure that OpenCV, NumPy, skimage, and Matplotlib are installed. Install these with:
+     ```bash
+     pip install opencv-python-headless numpy scikit-image matplotlib
+     ```
+3. **Run the Code**: Execute the code to analyze each image for purple-stained regions.
+4. **Adjust Parameters**:
+   - Modify `num_segments` to control the number of superpixels.
+   - Adjust HSV color thresholds (`lower_purple` and `upper_purple`) to capture the full range of purple staining for each image, as needed.
+   
+The code will output segmented images with regions classified by purple concentration, enabling visualization and quantification of staining patterns across the tissue samples.
 
-- **Python** 3.8+
-- **OpenCV** 4.5.4
-- **Numpy** 1.21.0
-- **Matplotlib** 3.4.3
-- **Scikit-image** 0.18.1
+---
 
-Install the necessary packages if you haven't already:
-```bash
-pip install opencv-python-headless numpy scikit-image matplotlib
+## Limitations
 
-Run code after and interpret results
+While effective at highlighting stained regions, this method has some limitations:
 
-Adjust parameters like `num_segments` for superpixel count and 
-`lower_purple`/`upper_purple` to refine HSV color thresholds as needed. 
+- **Parameter Sensitivity**: This analysis relies on specific threshold and morphological settings, which may require adjustment depending on the image.
+- **Lighting and Staining Variability**: Variations in lighting or stain intensity can affect results, requiring fine-tuning of HSV color thresholds to achieve accurate segmentation.
+- **Outside Region Processing**: The code is currently limited in its handling of regions outside the epithelium and may struggle with overlapping tissue areas where superpixels may blend inside and outside regions.
 
-
-## Limitations 
-
-While this method effectively highlights stained regions, it has some limitations. 
-It relies on specific threshold and morphological settings, which may need adjustment for different images.
-Variations in lighting or stain intensity can also affect results, requiring color threshold adjustments. 
-Additionally, the code is not fully developed for handling outside regions and struggles with overlapping
-tissue areas where superpixels may blend inside and outside regions. Expanding these capabilities would 
-improve its effectiveness across a wider range of tissue samples.
-
+Improving these aspects would enhance the robustness of this tool across a more diverse range of tissue samples.
+```
