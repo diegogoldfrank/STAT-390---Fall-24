@@ -51,8 +51,9 @@ Follow these steps to use the pipeline to generate matching slices for all patie
    - **For a Subset of Patients**: Separate patient image files into their own folders within `processed_images` (e.g., `processed_images/patient1`, `processed_images/patient2`).
 
 3. **Run the Pipeline**:
-   - For an interactive run, open **`NoahsMatching.ipynb`** in Jupyter Notebook and execute cells in sequence.
-   - For batch processing, run `match_pipeline.py`. A GUI will prompt you to select the directory containing the images.
+ - Run `match_pipeline.py`. A GUI will prompt you to select the directory containing the images.
+ - Open **`NoahsMatching.ipynb`** in Jupyter Notebook and execute cells in sequence.
+
 
 4. **Process and Review Matches**:
    - Upon execution, the pipeline will preprocess, extract contours, and match images, saving results in the `matches` folder. Images will be organized by patient, with matched slices grouped in subfolders.
