@@ -1,0 +1,9 @@
+This method is designed to analyze tissue images, focusing on identifying and quantifying purple-stained regions.
+The process begins with generating an epithelium mask to isolate tissue regions using contour detection. 
+The input image is preprocessed through grayscale conversion, blurring, and thresholding to create a binary mask. 
+Morphological operations help refine this mask by smoothing edges and removing noise. Contours outlining the epithelium are then extracted and drawn on the original image, creating a
+clear visual distinction of the tissue region. The next step, superpixel segmentation, uses color and texture similarity
+to divide the image into smaller segments. Each segment is analyzed for purple concentration based on defined HSV color thresholds,
+allowing a more consistent analysis across lighting variations. Regions with high staining concentration retain their original
+color, moderate concentrations are marked in white, and low concentrations in black, emphasizing tissue areas by staining intensity.
+
