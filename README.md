@@ -1,6 +1,5 @@
 # STAT-390---Fall-24
 
-Initial creation
 # STEP 1 - TISSUE SLICE EXTRACTION
 # QuPath scripting files to automate tissue extraction
 By: Cara Chang, updated 10/25/24
