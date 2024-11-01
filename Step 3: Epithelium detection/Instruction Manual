@@ -1,0 +1,10 @@
+Instruction Manual for Use:
+
+1. To use this code, start by organizing your images and ensuring that they are named 
+and stored in a directory that matches the image path specified in the code. Also make sure they are in .tif format. 
+2. Make sure OpenCV, NumPy, skimage, and Matplotlib are installed. 
+3. Run the code.
+4. Adjust parameters like `num_segments` for superpixel count and 
+`lower_purple`/`upper_purple` to refine HSV color thresholds as needed. 
+The code will output segmented images with regions classified by purple concentration, 
+with the ability to visualize and quantify these staining patterns.
