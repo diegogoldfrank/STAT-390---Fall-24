@@ -1,0 +1,9 @@
+
+Limitations:
+
+While this method effectively highlights stained regions, it has some limitations. 
+It relies on specific threshold and morphological settings, which may need adjustment for different images.
+Variations in lighting or stain intensity can also affect results, requiring color threshold adjustments. 
+Additionally, the code is not fully developed for handling outside regions and struggles with overlapping
+tissue areas where superpixels may blend inside and outside regions. Expanding these capabilities would 
+improve its effectiveness across a wider range of tissue samples.
