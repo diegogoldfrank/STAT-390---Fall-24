@@ -1,1 +1,32 @@
+# Epithelium Extraction
 
+## Overview
+
+This method is designed for analyzing tissue images to identify and quantify purple-stained regions, commonly used to highlight specific tissue structures. It begins by generating an epithelium mask to isolate tissue regions through contour detection. The input image is preprocessed with grayscale conversion, blurring, and thresholding to create a binary mask, which is refined using morphological operations to smooth edges and remove noise. Contours outlining the epithelium are then extracted and drawn on the original image, making the tissue region visually distinct. 
+
+Following this, superpixel segmentation divides the image into smaller regions based on color and texture similarity. Each segment is then analyzed for purple staining intensity using defined HSV color thresholds, allowing consistent analysis across varying lighting conditions. Regions with high staining concentration retain their original color, moderate concentrations are marked in white, and low concentrations in black, visually emphasizing tissue areas based on staining levels.
+
+## Instruction Manual
+
+1. **Prepare Image Directory**: Organize and name your images consistently, and store them in a directory matching the image path specified in the code. Ensure they are in `.tif` format.
+   
+2. **Install Dependencies**: Make sure the following libraries are installed: OpenCV, NumPy, skimage, and Matplotlib. If needed, install them via:
+   ```bash
+   pip install opencv-python-headless numpy scikit-image matplotlib
+   ```
+
+3. **Run the Code**: Execute the code, ensuring your images are accessible in the specified directory. The code will process each image and display the original and segmented images.
+
+4. **Parameter Adjustments**:
+   - Adjust `num_segments` to modify the number of superpixels.
+   - Refine HSV color thresholds (`lower_purple` and `upper_purple`) to capture the range of purple staining in your images.
+   - The code will output segmented images with regions classified by purple concentration, enabling visualization and quantification of staining patterns.
+
+## Limitations
+
+While effective, this method has some limitations:
+- **Parameter Sensitivity**: The code relies on specific threshold and morphological settings, which may require adjustment for different images.
+- **Lighting and Stain Variability**: Changes in lighting or stain intensity can impact results, potentially requiring color threshold adjustments.
+- **Outside Region and Overlap Handling**: The code is currently limited in processing outside regions and may struggle with overlapping tissue areas where superpixels mix inside and outside regions.
+
+Expanding these features could improve the tool's effectiveness across a broader range of tissue samples.
