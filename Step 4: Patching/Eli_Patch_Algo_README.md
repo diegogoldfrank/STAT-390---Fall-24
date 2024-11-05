@@ -1,8 +1,9 @@
 ## README file explaning Eli's method for creating and exporting patches:
 
 ### Updates from previous week: 
-The new code calculates width / height for patches based on Krish’s specifications and then applies horizontal / vertical patching across the image.
+The new code calculates width / height for patches based on Krish’s specifications and then applies horizontal / vertical patching across the image. The new version of the code introduces the calculate_optimal_patch_dimensions function, which calculates the optimal patch height and width based on the epithelium mask. The patch dimensions are based on the maximum continuous width of white pixels (i.e., the epithelium area) and the overall epithelium area in the mask. The optimal patch height is the maximum width of continuous white pixels (in each row), with a minimum height of 100. The patch width is calculated by dividing the epithelium area by 100 and the optimal patch height.
 
+## About Eli's Algorithm:
 Eli's algorithm takes in the processed images from Cara’s segment (in one drive and linked in "Step 1" folder on github"). Eli's algorithm identifies the stroma and the epithelium, applying a sliding kernel across the image of either a) the local epithelium (W) and 100 pixels (H) or b) If more than 50% of the "window" is epithelium, records a new segment. 
 
 ### Description of code: 
@@ -10,7 +11,7 @@ Loads images and converts them to grayscale. Applies a Guassian blur to smooth t
 --> Loop through all images in the input folder, and process the images and save the output, mask, intermediate, final, and squared images
 
 ### Room for improvement: 
-The epithelium extraction can still be refined and there are still open questions about how to best sample the image (pending the research team).
+Still open questions about how to best sample the image (pending the research team).
 
 ### Hardcoding: 
 Only hardcoded value relates to the color thresholding used in the epithelium extraction. Other group members / team 6 have been working on ways to generalize this segment and can likely be combined. 
