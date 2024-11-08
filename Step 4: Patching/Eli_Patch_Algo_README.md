@@ -52,12 +52,6 @@ Loops through all image files in the input_folder with .tif, .jpg, or .png exten
 
 Prints a message indicating that the processing is complete for all images.
 
-### Summary of the Main Steps:
-The code preprocesses each image by converting it to grayscale and applying Gaussian blur and thresholding.
-It detects the largest epithelium region using contour detection.
-It calculates optimal patch dimensions based on the epithelium area.
-Patches are applied using a sliding window approach, ensuring minimal overlap and maximizing coverage.
-The final processed images, with patches applied and region outlines, are saved to the specified output folder.
 
 ## Room for improvement: 
 Still open questions about how to best sample the image (pending the research team).
