@@ -1,0 +1,99 @@
+{
+  "version": "0.5.1",
+  "createTimestamp": 1727907659523,
+  "modifyTimestamp": 1727907659523,
+  "uri": "file:/Users/kylabruno/Downloads/Stat_390/Week6_Presentation5/project.qpproj",
+  "lastID": 245,
+  "images": [
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/h\u0026e_h1810898.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 234,
+      "randomizedName": "cfae9262-01c1-465d-a985-ec2994bf38b1",
+      "imageName": "h\u0026e_h1810898.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/h\u0026e_h2125906.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 236,
+      "randomizedName": "8f4b8d73-44d9-40cb-ba7a-a7a82d0db3b0",
+      "imageName": "h\u0026e_h2125906.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/melan_h1812404.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 238,
+      "randomizedName": "5f30442b-5255-4030-83dd-fd4898b11b40",
+      "imageName": "melan_h1812404.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/melan_h1854405.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 240,
+      "randomizedName": "c66bb195-ea6d-4ae4-ba02-9db106a55912",
+      "imageName": "melan_h1854405.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/sox10_h1849462.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 242,
+      "randomizedName": "2eb728dd-0735-426c-b7c0-46950c5d0358",
+      "imageName": "sox10_h1849462.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/sox10_h1854400.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 244,
+      "randomizedName": "e6a0af36-9523-4649-a247-be34692f3c54",
+      "imageName": "sox10_h1854400.tif - Series 0",
+      "metadata": {}
+    }
+  ]
+}

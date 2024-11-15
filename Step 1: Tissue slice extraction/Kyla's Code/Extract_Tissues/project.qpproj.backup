@@ -1,0 +1,189 @@
+{
+  "version": "0.5.1",
+  "createTimestamp": 1727907659523,
+  "modifyTimestamp": 1727907659523,
+  "uri": "file:/Users/kylabruno/Downloads/Stat_390/Week6_Presentation5/project.qpproj",
+  "lastID": 245,
+  "images": [
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/h\u0026e_h1810898.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 234,
+      "randomizedName": "cfae9262-01c1-465d-a985-ec2994bf38b1",
+      "imageName": "h\u0026e_h1810898.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/h\u0026e_h1810898.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 235,
+      "randomizedName": "d2b10e6a-247d-43d1-a3bc-ebc1be084356",
+      "imageName": "h\u0026e_h1810898.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/h\u0026e_h2125906.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 236,
+      "randomizedName": "8f4b8d73-44d9-40cb-ba7a-a7a82d0db3b0",
+      "imageName": "h\u0026e_h2125906.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/h\u0026e_h2125906.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 237,
+      "randomizedName": "3b85fa41-857d-4fbf-bedb-79191a55b0f2",
+      "imageName": "h\u0026e_h2125906.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/melan_h1812404.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 238,
+      "randomizedName": "5f30442b-5255-4030-83dd-fd4898b11b40",
+      "imageName": "melan_h1812404.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/melan_h1812404.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 239,
+      "randomizedName": "96b5fcd3-4251-4968-8848-5963e0c9f459",
+      "imageName": "melan_h1812404.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/melan_h1854405.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 240,
+      "randomizedName": "c66bb195-ea6d-4ae4-ba02-9db106a55912",
+      "imageName": "melan_h1854405.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/melan_h1854405.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 241,
+      "randomizedName": "faf70b51-9797-4447-9e20-c24439c61fd2",
+      "imageName": "melan_h1854405.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/sox10_h1849462.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 242,
+      "randomizedName": "2eb728dd-0735-426c-b7c0-46950c5d0358",
+      "imageName": "sox10_h1849462.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/sox10_h1849462.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 243,
+      "randomizedName": "0ce0cd3a-5835-4dd2-b6f0-6d0c69a46c6f",
+      "imageName": "sox10_h1849462.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/sox10_h1854400.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 244,
+      "randomizedName": "e6a0af36-9523-4649-a247-be34692f3c54",
+      "imageName": "sox10_h1854400.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Stat_390/needs_manual_intervention/sox10_h1854400.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 245,
+      "randomizedName": "f54c69d8-b1e2-4609-9009-9dc7ce4dff2d",
+      "imageName": "sox10_h1854400.tif - mask image",
+      "metadata": {}
+    }
+  ]
+}
