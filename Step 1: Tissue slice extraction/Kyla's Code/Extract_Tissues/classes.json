@@ -1,0 +1,28 @@
+{
+  "pathClasses": [
+    {
+      "name": "Stroma",
+      "color": -6895466
+    },
+    {
+      "name": "Other",
+      "color": -14336
+    },
+    {
+      "name": "Region*",
+      "color": -16777036
+    },
+    {
+      "name": "Ignore*",
+      "color": -4934476
+    },
+    {
+      "name": "Epithelium",
+      "color": -11502406
+    },
+    {
+      "name": "Tissue",
+      "color": -8388480
+    }
+  ]
+}
