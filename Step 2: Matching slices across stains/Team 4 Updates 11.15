@@ -1,6 +1,0 @@
-We were having issues pushing Team 4's updates for this week. They are in this Github:
-https://github.com/noahschulhof/stat390/tree/main/Noah
-
-pipeline.py is a script that starts from the output of Cara's automation, then matches, rotates, extracts epithelium, and patches
-rotate_extract.ipynb is a notebook that shows the outputs of our rotation and extraction algorithms
-rotate_extract_patch.py is a script that starts from a folder of matched images and then rotates, extracts epithelium, and patches
